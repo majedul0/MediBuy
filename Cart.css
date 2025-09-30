@@ -1,0 +1,158 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and navigation styling */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#cart {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.item-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin-bottom: 5px;
+}
+
+.item-details input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.remove-btn {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #d44a4d;
+}
+
+.cart-summary {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.checkout-btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #21867a;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #2a9d8f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px; 
+}
+
+
+
+
+
+
+.button-link {
+    display: inline-block;
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #21867a;
+}
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;               
+  background-color: #d2ede8;  
+  padding: none;          
+  border-radius: 8px;         
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+  display: inline-block;     
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}

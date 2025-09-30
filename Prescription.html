@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Management - MediBuy</title>
+    <link rel="stylesheet" href="Prescription.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>Upload Your Prescription</h2>
+            <p>Please upload your prescription in PDF or image format for validation.</p>
+            <form id="prescriptionForm">
+                <label for="prescriptionUpload">Select File:</label>
+                <input type="file" id="prescriptionUpload" name="prescriptionUpload" accept=".pdf, .jpg, .jpeg, .png" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+        <section class="status-section">
+            <h2>Prescription Status</h2>
+            <p id="statusMessage">No prescription uploaded yet.</p>
+        </section>
+    </main>
+    <br><br><br><br><br>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 MediBuy. All rights reserved.
+        
+        </p>
+    </footer>
+</body>
+</html>

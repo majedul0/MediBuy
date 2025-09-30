@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+/* Header Styling */
+header {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header Styling for MediBuy Icon */
+header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;               
+    background-color: #d2ede8;  
+    padding: none;          
+    border-radius: 8px;         
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+    display: inline-block;     
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcccb;
+}
+
+.login-btn {
+    background-color: #ff5a5f;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #ff7878;
+}
+
+/* Hero Section Styling */
+#hero {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e9f5f2, #d7ece8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.hero-image {
+    max-width: 400px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #237f6e;
+}
+
+/* Featured Medicines Section */
+#featured-medicines {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#featured-medicines h3 {
+    font-size: 28px;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+.medicine-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.medicine-item {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.medicine-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.medicine-item h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.medicine-item p {
+    font-size: 16px;
+    color: #ff5a5f;
+    font-weight: bold;
+}
+
+/* Benefits Section */
+#benefits {
+    padding: 40px 20px;
+    background-color: #e9f5f2;
+    text-align: center;
+}
+
+#benefits h3 {
+    font-size: 28px;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+#benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#benefits li {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#testimonials h3 {
+    font-size: 28px;
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonial p:first-child {
+    font-style: italic;
+    color: #666;
+}
+
+.testimonial p:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2a9d8f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+.button-link {
+    display: inline-block;
+    background-color: #339d90;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-link:hover {
+    background-color: #21867a;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - MediBuy</title>
+    <link rel="stylesheet" href="Order Tracking.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+    <main class="main-content">
+        <section class="order-tracking-section">
+            <h2>Order Tracking</h2>
+            <p>Track the status of your order by entering your Order ID below.</p>
+            <form id="tracking-form" class="tracking-form">
+                <label for="order-id" class="tracking-label">Order ID:</label>
+                <input type="text" id="order-id" name="order-id" placeholder="Enter your Order ID" required>
+                <button type="submit" class="tracking-btn">Track Order</button>
+            </form>
+            <div id="tracking-result" class="tracking-result">
+                <h3>Order Status:</h3>
+                <p id="status-message">No order details available. Please enter a valid Order ID.</p>
+            </div>
+        </section>
+    </main>
+    <br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 MediBuy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to simulate order tracking functionality
+        document.getElementById('tracking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const orderId = document.getElementById('order-id').value;
+
+            // Simulated order tracking logic
+            if (orderId === "12345") {
+                document.getElementById('status-message').textContent = "Your order is on the way and will be delivered soon!";
+            } else if (orderId === "67890") {
+                document.getElementById('status-message').textContent = "Your order has been delivered. Thank you for shopping with MediBuy!";
+            } else {
+                document.getElementById('status-message').textContent = "Order not found. Please check your Order ID and try again.";
+            }
+        });
+    </script>
+</body>
+</html>

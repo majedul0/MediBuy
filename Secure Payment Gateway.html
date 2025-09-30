@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Gateway - MediBuy</title>
+    <link rel="stylesheet" href="Secure Payment Gateway.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+    <main class="main-content">
+        <section class="payment-gateway-section">
+            <h1>Secure Payment Gateway</h1>
+            <p>Complete your payment securely using the available options below. We ensure that your payment details are protected with the highest level of security.</p>
+
+            <div class="payment-methods">
+                <h3>Select Payment Method</h3>
+                <form id="payment-form">
+                    
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="credit-card">Credit/Debit Card</option>
+                        <option value="mobile-wallet">Mobile Wallet (bKash)</option>
+                        <option value="Nagad">Mobile Wallet (Nagad)</option>
+                    </select>
+
+                    <div id="credit-card-info" class="payment-method-info">
+                        <label for="card-number" class="payment-input-label">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required>
+
+                        <label for="card-number" class="payment-input-label">Card Holder Name:</label>
+                        <input type="text" id="card-holder name" name="card-holder name" placeholder="Example" required>
+
+                        <label for="expiry-date" class="payment-input-label">Expiry Date:</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                        <label for="cvv" class="payment-input-label">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+
+                    <div id="mobile-wallet-info" class="payment-method-info">
+                        <label for="mobile-number" class="payment-input-label">bKash Number:</label>
+                        <input type="text" id="mobile-number" name="mobile-number" placeholder="017XXXXXXXX" required>
+                    </div>
+
+                    <div id="Nagad-info" class="payment-method-info">
+                        <label for="Nagad-email" class="payment-input-label">Nagad Number:</label>
+                        <input type="text" id="Nagad-number" name="Nagad-number" placeholder="017XXXXXXXX" required>
+                    </div>
+
+                    <button type="submit" class="payment-btn">Proceed to Payment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MediBuy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to dynamically show payment options based on selection
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const creditCardInfo = document.getElementById('credit-card-info');
+        const mobileWalletInfo = document.getElementById('mobile-wallet-info');
+        const NagadInfo = document.getElementById('Nagad-info');
+
+        paymentMethodSelect.addEventListener('change', function() {
+            const selectedMethod = paymentMethodSelect.value;
+
+            // Hide all payment details first
+            creditCardInfo.style.display = 'none';
+            mobileWalletInfo.style.display = 'none';
+            NagadInfo.style.display = 'none';
+
+            // Show relevant payment details
+            if (selectedMethod === 'credit-card') {
+                creditCardInfo.style.display = 'block';
+            } else if (selectedMethod === 'mobile-wallet') {
+                mobileWalletInfo.style.display = 'block';
+            } else if (selectedMethod === 'Nagad') {
+                NagadInfo.style.display = 'block';
+            }
+        });
+
+        // Trigger the change event on load to show the default payment option
+        paymentMethodSelect.dispatchEvent(new Event('change'));
+    </script>
+</body>
+</html>

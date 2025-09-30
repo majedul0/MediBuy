@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - MediBuy</title>
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+
+    <section id="cart">
+        <h2>My Cart</h2>
+        <div class="cart-container">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <img src="image/medicine1.png" alt="Medicine 1">
+                <div class="item-details">
+                    <h3>Paracetamol</h3>
+                    <p>Price: ৳10.00</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <img src="image/medicine2.png" alt="Medicine 1">
+                <div class="item-details">
+                    <h3>Ibuprofen</h3>
+                    <p>Price: ৳8.00</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+                <img src="image/medicine3.png" alt="Medicine 1">
+                <div class="item-details">
+                    <h3>Vitamin C</h3>
+                    <p>Price: ৳11.00</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <!-- Add more items here -->
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <p>Total: ৳49.00</p>
+                <a href="Secure Payment Gateway.html" class="button-link">Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MediBuy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

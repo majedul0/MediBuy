@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location-based Services - MediBuy</title>
+    <link rel="stylesheet" href="Search Pharmacy.css">
+</head>
+<body>
+    <header class="header">
+        <h1>
+            <a href="Home Page.html" class="button-link">MediBuy</a></h1>
+        </h1>
+    </header>
+    <main class="main-content">
+        <section class="location-services-section">
+            <h2>Search Pharmacy</h2>
+            <p>Find pharmacies near you and search for available medicines. You can also share your location for more accurate results.</p>
+
+            <div class="search-container">
+                <label for="search-pharmacy" class="search-label">Search for Pharmacy:</label>
+                <input type="text" id="search-pharmacy" placeholder="Enter pharmacy name">
+                <br><br>
+                <button id="search-btn" class="search-btn">Search Pharmacy</button>
+            </div>
+
+
+
+            <div class="location-services-btns">
+                <button id="share-location" class="share-location-btn">Nearby Pharmacy</button>
+            </div>
+        </section>
+    </main>
+    <br><br><br><br><br><br><br>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 MediBuy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle location sharing
+        document.getElementById('share-location').addEventListener('click', function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    alert('Your location has been shared: Latitude: ' + lat + ', Longitude: ' + lon);
+                    // Optionally, you can use this latitude and longitude to fetch nearby pharmacies.
+                }, function(error) {
+                    alert('Error retrieving your location.');
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        });
+    </script>
+</body>
+</html>
